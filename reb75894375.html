@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret Santa 2023</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/html5-boilerplate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('images/background.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .greeting {
+            color: #29978a;
+            font-family: 'Luminari', fantasy; /* Use the Great Vibes font */
+            font-size: 18px; /* Adjust the font size */
+            font-weight: bold;
+        }
+
+        .image-container {
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 10px; /* Optional: Add rounded corners to the container */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transform: scale(1.4); /* Adjust the scale value for zooming (1.0 is normal size) */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+            <p class="greeting">Your Secret Santa recipient is:</p>
+        <div class="image-container">
+            <img src="images/regina.png" alt="Your Image Description">
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
