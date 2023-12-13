@@ -35,11 +35,18 @@
             font-weight: bold;
         }
 
-        .image-container img {
+        .image-container {
             max-width: 100%;
+            overflow: hidden;
+            border-radius: 10px; /* Optional: Add rounded corners to the container */
+        }
+
+        .image-container img {
+            width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
+            transform: scale(2.0); /* Adjust the scale value for zooming (1.0 is normal size) */
         }
     </style>
 </head>
