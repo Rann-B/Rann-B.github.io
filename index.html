@@ -12,13 +12,37 @@
     <link rel="stylesheet" href="css/main.css">
     <style>
         body {
-            background: url('https://assets.vogue.com/photos/58915440b482c0ea0e4d784e/master/w_1600,c_limit/650-542-mistakes-to-avoid-in-your-office-secret-santa-exchange.gif') no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('https://www.allsaintswokingham.org.uk/wp-content/uploads/2023/10/—Pngtree—elegant-christmas-borders-with-golden_5593864-cropped.png') no-repeat center center fixed;
             background-size: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background for better readability */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px; /* Optional: Add rounded corners to the content */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Center the image horizontally */
+            margin: 0 auto; /* Center the image horizontally */
         }
     </style>
 </head>
 <body>
-    <p>Hello Front Row Viewers!</p>
+    <div class="content">
+        <div class="image-container">
+            <img src="https://i.imgur.com/wGf26U1.png" alt="Your Image Description">
+        </div>
+        <p>Hello Front Row Viewers!</p>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
