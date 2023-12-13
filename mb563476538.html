@@ -31,8 +31,29 @@
         .greeting {
             color: #29978a;
             font-family: 'Luminari', fantasy; /* Use the Great Vibes font */
-            font-size: 18px; /* Adjust the font size */
+            font-size: 24px; /* Adjust the font size */
             font-weight: bold;
+        }
+
+        .wishlistHeader {
+            color: #29978a;
+            font-family: 'Helvetica', sans-serif; /* Use the Great Vibes font */
+            font-size: 20px; /* Adjust the font size */
+            font-weight: bold;
+        }
+
+        .wishlist {
+            color: #29978a;
+            font-family: 'Helvetica', sans-serif; /* Use the Great Vibes font */
+            font-size: 16px; /* Adjust the font size */
+            font-weight: bold;
+        }
+
+        .footer {
+            color: #0d0d0b;
+            font-family: 'Helvetica', sans-serif; /* Use the Great Vibes font */
+            font-size: 14px; /* Adjust the font size */
+            font-weight: lighter;
         }
 
         .image-container {
@@ -52,10 +73,19 @@
 </head>
 <body>
 <div class="content">
-    <p class="greeting">Your Secret Santa recipient is:</p>
+    <p class="greeting">Your secret santa recipient is:</p>
+    <div></div>
     <div class="image-container">
         <img src="images/merle.png" alt="Your Image Description">
     </div>
+    <p class="wishlistHeader">Wishlist:</p>
+    <div></div>
+    <p class="wishlist">Pay a bill</p>
+    <p class="wishlist">Babysit my kids</p>
+    <p class="wishlist">Landrover</p>
+</div>
+<div>
+    <p class="footer">Max spend R150.00</p>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -63,3 +93,5 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
+
