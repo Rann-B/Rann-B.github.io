@@ -30,15 +30,15 @@
 
         .greeting {
             color: #29978a;
-            font-family: 'Luminari', fantasy; /* Use the Great Vibes font */
-            font-size: 18px; /* Adjust the font size */
+            font-family: 'Luminari', fantasy;
+            font-size: 18px;
             font-weight: bold;
         }
 
         .image-container {
             max-width: 100%;
             overflow: hidden;
-            border-radius: 10px; /* Optional: Add rounded corners to the container */
+            border-radius: 10px;
         }
 
         .image-container img {
@@ -46,7 +46,23 @@
             height: auto;
             display: block;
             margin: 0 auto;
-            transform: scale(1); /* Adjust the scale value for zooming (1.0 is normal size) */
+            transform: scale(1);
+        }
+
+        /* Style for the form */
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -55,10 +71,27 @@
         <div class="image-container">
             <img src="images/giphy.gif" alt="Your Image Description">
         </div>
+        
+        <!-- Form for text input and submission -->
+        <form id="redirectForm" onsubmit="redirectPage(); return false;">
+            <label for="inputText">Enter Text:</label>
+            <input type="text" id="inputText" name="inputText" required>
+            <input type="submit" value="Submit">
+        </form>
     </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        // JavaScript function to handle form submission and redirect
+        function redirectPage() {
+            var inputText = document.getElementById('inputText').value;
+            var destinationPage = inputText + '.html';
+            window.location.href = destinationPage;
+        }
+    </script>
 </body>
 </html>
