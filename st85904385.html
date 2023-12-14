@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret Santa 2023</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/html5-boilerplate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('images/background.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .greeting {
+            color: #29978a;
+            font-family: 'Luminari', fantasy; /* Use the Great Vibes font */
+            font-size: 24px; /* Adjust the font size */
+            font-weight: bold;
+        }
+
+        .wishlistHeader {
+            color: #29978a;
+            font-family: 'Helvetica', sans-serif; /* Use the Great Vibes font */
+            font-size: 20px; /* Adjust the font size */
+            font-weight: bold;
+        }
+
+        .wishlist {
+            color: #29978a;
+            font-family: 'Helvetica', sans-serif; /* Use the Great Vibes font */
+            font-size: 16px; /* Adjust the font size */
+            font-weight: bold;
+        }
+
+        .footer {
+            color: #0d0d0b;
+            font-family: 'Helvetica', sans-serif; /* Use the Great Vibes font */
+            font-size: 14px; /* Adjust the font size */
+            font-weight: lighter;
+        }
+
+        .image-container {
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 10px; /* Optional: Add rounded corners to the container */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transform: scale(1.4); /* Adjust the scale value for zooming (1.0 is normal size) */
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <p class="greeting">Your secret santa recipient is:</p>
+    <div></div>
+    <div class="image-container">
+        <img src="images/sophia.png" alt="Your Image Description">
+    </div>
+    <p class="wishlistHeader">Wishlist:</p>
+    <div></div>
+    <p class="wishlist">Surprise Me!</p>
+    <p class="wishlist"></p>
+    <p class="wishlist"></p>
+</div>
+<div>
+    <p class="footer">Max spend R150.00</p>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
